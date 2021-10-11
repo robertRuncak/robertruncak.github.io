@@ -7,6 +7,7 @@ Cluster Shared Volumes (CSV) je klastrovaný súborový systém vyvinutý spolo�
 
 V prípade služby Storage Spaces Direct sú všetky IO metadáta, konkrétne zápisy, presmerované do uzla klastra (cluster node), ktorý vlastní zdieľaný zväzok klastra. Ak sa na danom zväzku používa súborový systém NTFS, zväzok bude v režime "Block Redirected Mode", ak sa použije systém ReFS, zväzok bude v režime "File System Redirected Mode". Toto je možné zistiť pomocou Powershell-u Get-ClusterSharedVolumeState. 
 
+
 {% highlight powershell %}
 Get-ClusterSharedVolume -Name "Cluster Virtual Disk (MIRROR1)" | Get-ClusterSharedVolumeState
 
