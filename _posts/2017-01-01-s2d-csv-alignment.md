@@ -48,3 +48,4 @@ Za predpokladu, že sa pre službu Storage Spaces Direct používa odporúčaný
 
 ![S2D-CSV-alignment](https://user-images.githubusercontent.com/11541025/136854742-e1f8d72a-4192-4885-b302-35b73793b875.png)
 
+V tomto príklade je 4-uzlový klaster S2D so štyrmi CSV, ktoré používajú technológiu troj-cestného zrkadlenia (three-way mirror).
