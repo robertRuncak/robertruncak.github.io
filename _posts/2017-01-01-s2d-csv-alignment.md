@@ -43,7 +43,7 @@ VolumeFriendlyName           : MIRROR1
 VolumeName                   : \\?\Volume{fe0c0f0f-cbc3-43f6-8816-1e80724fa157}\
 {% endhighlight %}
 
-Za predpokladu, že sa pre službu Storage Spaces Direct použiva odporúčaný súborový systém ReFS, môže na S2D klastri nastať táto situácia:
+Za predpokladu, že sa pre službu Storage Spaces Direct používa odporúčaný súborový systém ReFS, môže na S2D klastri nastať táto situácia:
 
 ![S2D-CSV-alignment](https://user-images.githubusercontent.com/11541025/136854742-e1f8d72a-4192-4885-b302-35b73793b875.png)
 
