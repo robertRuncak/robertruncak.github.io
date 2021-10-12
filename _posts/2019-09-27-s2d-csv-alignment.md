@@ -54,6 +54,8 @@ S2D Node1 vlastní CSV1 a sú na ňom spustené 3 virtuálne servery. S2D Node2 
 
 Toto určite nebude problém pre jeden virtuálny server. Ale v prípade, že v klastri bežia stovky virtuálnych serverov, kde veľká časť virtuálnych serverov a ich IO operácie musia preplávať k vlastníkovi CSV, na ktorom sa nachádzajú disky VM, to už môže byť pre IO operácie doručované cez sieť veľký problém.
 
-IO operácie sú citlivé na latenciu (teda čas kedy vznikla IO operácia a kedy bola táto IO operáca vybavená) a plávanie medzi vlastníkmi CSV (teda zvýšený skok v sieti) to ešte nezlepšuje. Takisto táto činnosť zaberá určitú šírku sieťového pásma a ďalšie cykly CPU na danom klastri - hypervízore.
+IO operácie sú citlivé na latenciu (teda čas kedy vznikla IO operácia a kedy bola táto IO operáca vybavená) a plávanie medzi vlastníkmi CSV (teda skákanie v sieti) to ešte nezlepšuje. Takisto táto činnosť zaberá určitú šírku sieťového pásma a ďalšie cykly CPU na danom klastri - hypervízore.
 
+To je tiež dôvod, prečo jeden nástrojov pre testovanie výkonu S2D [VMfleet][vmfllet-github] vyrovnáva virtuálne servery s CSV kde sú uložené disky VM a s hypervízorom, na ktorých sú tieto VM spustené. Dôvod je jednoduchý - zistiť čo samotný klaster dokáže pri najnižších vstupných nákladoch.
 
+[vmfleet-github]: https://github.com/microsoft/diskspd/tree/master/Frameworks/VMFleet
