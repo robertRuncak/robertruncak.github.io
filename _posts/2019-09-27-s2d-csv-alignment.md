@@ -56,7 +56,7 @@ Toto určite nebude problém pre jeden virtuálny server. Ale v prípade, že v 
 
 IO operácie sú citlivé na latenciu (teda čas kedy vznikla IO operácia a kedy bola táto IO operáca vybavená) a plávanie medzi vlastníkmi CSV (teda skákanie v sieti) to ešte nezlepšuje. Takisto táto činnosť zaberá určitú šírku sieťového pásma a ďalšie cykly CPU na danom klastri - hypervízore.
 
-To je tiež dôvod, prečo jeden nástrojov pre testovanie výkonu S2D [VMfleet][vmfleet-github] vyrovnáva virtuálne servery s CSV kde sú uložené disky VM a s hypervízorom, na ktorých sú tieto VM spustené. Dôvod je jednoduchý - zistiť čo samotný klaster dokáže pri najnižších vstupných nákladoch.
+To je tiež dôvod, prečo jeden z nástrojov pre testovanie výkonu S2D [VMfleet][vmfleet-github] vyrovnáva virtuálne servery s CSV, kde sú uložené disky VM, s hypervízorom, na ktorých sú tieto VM spustené. Dôvod je jednoduchý - zistiť čo samotný klaster dokáže pri najnižších vstupných nákladoch.
 
 [vmfleet-github]: https://github.com/microsoft/diskspd/tree/master/Frameworks/VMFleet
 
