@@ -58,5 +58,9 @@ IO operácie sú citlivé na latenciu (teda čas kedy vznikla IO operácia a ked
 
 To je tiež dôvod, prečo jeden z nástrojov pre testovanie výkonu S2D [VMfleet][vmfleet-github] vyrovnáva virtuálne servery s CSV, kde sú uložené disky VM, s hypervízorom, na ktorých sú tieto VM spustené. Dôvod je jednoduchý - zistiť čo samotný klaster dokáže pri najnižších vstupných nákladoch.
 
+Čo s tým? Zarovnať VM -> CSV -> HYPER-V
+Ako na to? Použiť powershell skript [Align-VMsWithStorage.ps1][align-github]
+
 [vmfleet-github]: https://github.com/microsoft/diskspd/tree/master/Frameworks/VMFleet
+[align-github] https://github.com/DarrylvanderPeijl/Align-VMsWithStorage
 
