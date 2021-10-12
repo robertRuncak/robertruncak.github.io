@@ -49,3 +49,11 @@ Za predpokladu, že sa pre službu Storage Spaces Direct používa odporúčaný
 ![S2D-CSV-alignment](https://user-images.githubusercontent.com/11541025/136854742-e1f8d72a-4192-4885-b302-35b73793b875.png)
 
 V tomto príklade ide o 4-uzlový klaster S2D so štyrmi CSV, ktoré používajú technológiu troj-cestného zrkadlenia (three-way mirror).
+
+S2D Node1 vlastní CSV1 a sú na ňom spustené 3 virtuálne servery. S2D Node2 vlastní CSV2. Hneď ako VM2, ktorý má uložené disky na CSV2, začne robiť zápisy, všetky IO operácie budú presmerované do uzla klastra, ktorý vlastní CSV, kde sú uložené disky VM2. Jednoducho povedané: Všetky IO operácie typu zápis pre VM2 musia preplávať na S2D Node2, než bude možné ich potvrdiť. To isté platí aj pre VM3.
+
+Toto určite nebude problém pre jeden virtuálny server. Ale v prípade, že v klastri bežia stovky virtuálnych serverov, kde veľká časť virtuálnych serverov a ich IO operácie musia preplávať k vlastníkovi CSV, na ktorom sa nachádzajú disky VM, to už môže byť pre IO operácie doručované cez sieť veľký problém.
+
+IO operácie sú citlivé na latenciu (teda čas kedy vznikla IO operácia a kedy bola táto IO operáca vybavená) a plávanie medzi vlastníkmi CSV (teda zvýšený skok v sieti) to ešte nezlepšuje. Takisto táto činnosť zaberá určitú šírku sieťového pásma a ďalšie cykly CPU na danom klastri - hypervízore.
+
+
