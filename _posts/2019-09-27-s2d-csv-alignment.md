@@ -62,6 +62,10 @@ To je tiež dôvod, prečo jeden z nástrojov pre testovanie výkonu S2D [VMflee
 
 Ako na to? Vďaka Darryl van der Peijl je možné použiť napríklad powershell skript [Align-VMsWithStorage.ps1][align-github]
 
+Zdroj: [Darryl van der Peijl Blog][zdroj-darryl], [Microsoft Failover Cluster Blog][zdroj-microsoft]
+
 [vmfleet-github]: https://github.com/microsoft/diskspd/tree/master/Frameworks/VMFleet
 [align-github]: https://github.com/DarrylvanderPeijl/Align-VMsWithStorage
+[zdroj-darryl]:https://www.darrylvanderpeijl.com
+[zdroj-microsoft]:https://techcommunity.microsoft.com/t5/failover-clustering/understanding-the-state-of-your-cluster-shared-volumes/ba-p/371889
 
