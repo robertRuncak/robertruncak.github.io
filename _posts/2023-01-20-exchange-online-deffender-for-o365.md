@@ -4,6 +4,7 @@ layout: post
 ---
 
 Microsoft Defender for Office 365 je technológia, ktorá je určená pre väčšinu služieb a aplikácii Office 365 a jej hlavnou úlohou je kontrolovať súbory na prítomnosť spustiteľného škodlivého kódu a odkazov na internetové stránky. Pre Exchange Online sú zaujímavé technológie Safe Links a Safe Attachments.
+
 Viac info na stránke [Microsoft Defender for Office 365 service description][zdroj-ms-1]
 
 
@@ -12,9 +13,11 @@ Viac info na stránke [Microsoft Defender for Office 365 service description][zd
 Nevýhody - spomalenie doručovania príloh a cena. 
 
 Spomalenie doručovania príloh je daň za celý proces kontroly. Toto je možné riešiť zapnutím funkcie "Dynamic Delivery".
+
 Viac info na stránke [Safe Attachments in Microsoft Defender for Office 365][zdroj-ms-2]
 
 Cena. Bohužiaľ táto technológia nie je lacná ani pri konkurencii. Microsoft Defender for Office 365 je dostupná v najvyšších plánoch Microsoft 365. Dostupné sú predplatné (subscription) Plan 1 a Plan 2, ak je potrebné túto funkcionalitu priplatiť k nižším predplatným. Samozrejme sú táto technológie súčasťou rôznych balíkov. 
+
 Viac info na stránke [Microsoft Defender for Office 365][zdroj-ms-3]
 
 [zdroj-ms-1]: https://learn.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
