@@ -6,6 +6,7 @@ layout: post
 Microsoft Defender for Office 365 je technológia, ktorá je určená pre väčšinu služieb a aplikácii Office 365 a jej hlavnou úlohou je kontrolovať súbory na prítomnosť spustiteľného škodlivého kódu a odkazov na internetové stránky. Pre Exchange Online sú zaujímavé technológie Safe Links a Safe Attachments.
 Viac info na stránke [Microsoft Defender for Office 365 service description][zdroj-ms-1]
 
+
 Čo vlastne tieto technológie robia? Jednoducho kontrolujú odkazy na internetové stránky a doručované súbory. Čo stojí za zmienku je spôsobo akým to Microsoft robí. Všetky odkazy a súbory sú pri doručení skutočne otestované v zabezpečenom a izolovanom priestore. Každý odkaz je napríklad otvorený, preklikaný, posunie sa čas aby sa predišlo tomu, že dôjde k spusteniu škodlivého kódu až po neakej dobe. To isté platí aj pre súbory. Súbory sú otvárané, robotický test ich prekliká, robot skúša scrollovanie obrazovky a vykonáva rôzne náhodne vybrané akcie, testujú sa odkazy v súbore, posúva sa čas či náhodou nie je vykonanie škodlivého kódu naplánované s oneskorením. Ak sú všetky tieto kontroly a akcie vykonané, následne je odkaz alebo súbor doručený do mailovej schránky. 
 
 Nevýhody - spomalenie doručovania príloh a cena. 
